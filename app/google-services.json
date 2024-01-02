@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "316148646361",
+    "project_id": "campushive-c4e89",
+    "storage_bucket": "campushive-c4e89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316148646361:android:ed80ccbd5735d3b9e099c8",
+        "android_client_info": {
+          "package_name": "com.example.campushive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316148646361-621vtavj87hf8u7us4fk90q4a6i1jtu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyUKH5tX6llKzg3NyFdF0A-ZGsOZzVJzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316148646361-621vtavj87hf8u7us4fk90q4a6i1jtu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
