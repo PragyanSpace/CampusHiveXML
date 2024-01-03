@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.campushive.MessageData
 import com.example.campushive.R
 import com.example.campushive.databinding.ActivityChatBinding
 import io.socket.client.IO

@@ -1,4 +1,4 @@
-package com.example.campushive
+package com.example.campushive.ui
 
 import android.Manifest
 import android.content.ContentValues
@@ -6,21 +6,21 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.graphics.Color
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
-import com.example.campushive.ConversionUtil
+import com.example.campushive.util.DrawingView
+import com.example.campushive.R
 import com.example.campushive.agora.media.RtcTokenBuilder2
 import com.example.campushive.databinding.ActivityCanvasBinding
+import com.example.campushive.util.AppConst
+import com.example.campushive.util.ConversionUtil
+import com.example.campushive.util.GameUtil
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase

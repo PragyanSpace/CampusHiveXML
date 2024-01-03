@@ -20,20 +20,10 @@
         android:theme="@style/Theme.CampusHIve"
         tools:targetApi="31">
         <activity
-            android:name=".chat.ChatActivity"
+            android:name=".ui.CreatePostActivity"
             android:exported="false" />
         <activity
-            android:name=".VoiceCallActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SearchForRoomActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CanvasActivity"
-            android:exported="false"
-            android:screenOrientation="landscape" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".ui.LaunchActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +31,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.VoiceCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SearchForRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CanvasActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>

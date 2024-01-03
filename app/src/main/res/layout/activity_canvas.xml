@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/scribble_back"
-        tools:context=".CanvasActivity">
+        tools:context=".ui.CanvasActivity">
 
         <TextView
             android:id="@+id/word"
@@ -24,7 +24,7 @@
             app:layout_constraintStart_toStartOf="@+id/drawingView"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.example.campushive.DrawingView
+        <com.example.campushive.util.DrawingView
             android:id="@+id/drawingView"
             android:layout_width="0dp"
             android:layout_height="0dp"

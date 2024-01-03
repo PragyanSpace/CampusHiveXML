@@ -1,4 +1,4 @@
-package com.example.campushive
+package com.example.campushive.util
 
 import kotlin.random.Random
 

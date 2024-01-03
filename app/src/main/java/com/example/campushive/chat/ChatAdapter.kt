@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.campushive.MessageData
+import com.example.campushive.data.MessageData
 import com.example.campushive.databinding.MessageItemBinding
 
 class ChatAdapter(val context: Context, val chats: ArrayList<MessageData>) :
@@ -36,7 +36,7 @@ class ChatAdapter(val context: Context, val chats: ArrayList<MessageData>) :
         }
     }
 
-    fun addMoreData(message:MessageData)
+    fun addMoreData(message: MessageData)
     {
         chats.add(message)
     }

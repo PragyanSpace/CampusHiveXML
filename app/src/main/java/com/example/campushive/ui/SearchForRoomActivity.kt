@@ -1,4 +1,4 @@
-package com.example.campushive
+package com.example.campushive.ui
 
 import android.content.ContentValues
 import android.content.Context
@@ -10,8 +10,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.databinding.DataBindingUtil
+import com.example.campushive.R
 import com.example.campushive.databinding.ActivitySearchForRoomBinding
-import com.google.android.gms.tasks.Task
+import com.example.campushive.util.AppConst
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase

@@ -1,4 +1,4 @@
-package com.example.campushive
+package com.example.campushive.data
 
 data class MessageData(
     var username: String,

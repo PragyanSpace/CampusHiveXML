@@ -1,4 +1,4 @@
-package com.example.campushive
+package com.example.campushive.ui
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.campushive.R
 import com.example.campushive.agora.media.RtcTokenBuilder2
 import io.agora.rtc2.*
 

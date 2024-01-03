@@ -1,4 +1,4 @@
-package com.example.campushive
+package com.example.campushive.ui
 
 import android.content.ContentValues.TAG
 import android.content.Context
@@ -7,11 +7,15 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.campushive.R
 import com.example.campushive.chat.ChatActivity
 import com.example.campushive.databinding.ActivityMainBinding
+import com.example.campushive.util.AppConst
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -20,15 +24,17 @@ import com.google.firebase.ktx.Firebase
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
-
-    val database = Firebase.database(AppConst.dbUrl)
-    val myRef = database.getReference("College")
+    private lateinit var database : FirebaseDatabase
+    private lateinit var myRef:DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FirebaseApp.initializeApp(this)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         val sp = getSharedPreferences("pref", Context.MODE_PRIVATE)
         val editor = sp.edit()
+        FirebaseApp.initializeApp(this)
+        database = Firebase.database(AppConst.dbUrl)
+        myRef= database.getReference("College")
 
         if(!sp.contains("uuid")) {
             val uuid: String = java.util.UUID.randomUUID().toString()
