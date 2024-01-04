@@ -45,14 +45,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.searchRoomBtn.setOnClickListener {
-
-
             startActivity(Intent(this@MainActivity, SearchForRoomActivity::class.java))
-//            startActivity(Intent(this@MainActivity, VoiceCallActivity::class.java))
-        }
-
-        binding.editData.setOnClickListener {
-            startActivity(Intent(this@MainActivity, ChatActivity::class.java))
         }
 
         myRef.addValueEventListener(object : ValueEventListener {

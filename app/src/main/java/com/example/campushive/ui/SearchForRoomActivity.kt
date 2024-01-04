@@ -22,10 +22,10 @@ class SearchForRoomActivity : AppCompatActivity() {
     lateinit var sp:SharedPreferences
     lateinit var editor:Editor
 
-    val database = Firebase.database(AppConst.dbUrl)
+    private val database = Firebase.database(AppConst.dbUrl)
 
     //reference for jec
-    val myRef = database.getReference("College/jec")
+    val myRef = database.getReference("College/jec/scribble")
     var roomUuid: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
