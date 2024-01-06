@@ -1,4 +1,4 @@
-package com.example.campushive
+package com.example.campushive.repository
 
 import android.net.Uri
 import android.util.Log

@@ -16,6 +16,7 @@ import com.example.campushive.R
 import com.example.campushive.databinding.FragmentPostsBinding
 import com.example.campushive.ui.CreatePostActivity
 import com.example.campushive.ui.adapter.PostsAdapter
+import com.example.campushive.util.FirebaseUtil
 import com.example.campushive.viewmodel.PostViewModel
 import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
@@ -52,6 +53,19 @@ class PostsFragment : Fragment() {
         binding.addPost.setOnClickListener{
             val intent= Intent(requireContext(),CreatePostActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.pragyan.setOnClickListener {
+            FirebaseUtil.user="Pragyan"
+            binding.userChooser.isVisible=false
+        }
+        binding.sourav.setOnClickListener {
+            FirebaseUtil.user="Sourav"
+            binding.userChooser.isVisible=false
+        }
+        binding.vaskarjya.setOnClickListener {
+            FirebaseUtil.user="Vaskarjya"
+            binding.userChooser.isVisible=false
         }
     }
 

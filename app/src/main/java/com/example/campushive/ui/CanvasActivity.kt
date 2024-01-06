@@ -54,7 +54,7 @@ class CanvasActivity : AppCompatActivity(), DrawingView.DrawingListener {
         val database = Firebase.database(AppConst.dbUrl)
         val roomId = intent.getStringExtra("roomId")
         channelName=roomId.toString()
-        myRef = database.getReference("College/jec").child(roomId.toString())
+        myRef = database.getReference("College/jec/game/scribble").child(roomId.toString())
         sp = getSharedPreferences("pref", Context.MODE_PRIVATE)
 
 

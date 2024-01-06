@@ -8,7 +8,6 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.campushive.R
-import com.example.campushive.chat.ChatActivity
 import com.example.campushive.databinding.ActivityMainBinding
 import com.example.campushive.util.AppConst
 import com.google.firebase.FirebaseApp

@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chat.ChatActivity"
+            android:name=".ui.ChatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.VoiceCallActivity"
